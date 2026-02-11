@@ -1,14 +1,18 @@
-base_url = "https://YOUR_URL.TLD"
-title = "site title"
-description = "YOUR_SITE_DESCRIPTION"
-author = "YOUR_NAME"
+base_url = "https://zimo.life"
+title = "气气的生活"
+description = "气气的生活"
+author = "气气"
 theme = "tabi"
 generate_feeds = true
 compile_sass = true
 minify_html = true
 build_search_index = true
 default_language = "en"
-taxonomies = [{name = "tags", feed = true}]
+taxonomies = [
+    { name = "tags", feed = true },
+    { name = "categories" },
+    { name = "authors" }
+]
 
 
 [search]
@@ -199,15 +203,16 @@ quick_navigation_buttons = true
 
 # Date format used for blog posts.
 # Default is "6th July 2049" in English and "%-d %B %Y" in other languages.
-short_date_format = ""
+short_date_format = "%Y-%m-%d"
 
 # Date format used for the archive page.
 # Default is "06 July" in English and "%d %b" in other languages.
-archive_date_format = ""
+archive_date_format = "%Y-%m-%d"
 
 # Per-language date format overrides.
 # Examples: Spanish uses "3 de febrero de 2024", German uses "3. Februar 2024"
 date_formats = [
+    { lang = "en", long = "%Y-%m-%d", short = "%Y-%m-%d", archive = "%Y-%m-%d" },
     { lang = "es", long = "%d de %B de %Y", short = "%-d %b %Y" },
     { lang = "de", long = "%d. %B %Y", short = "%d.%m.%Y", archive = "%d. %b" },
 ]
@@ -252,7 +257,6 @@ menu = [
     { name = "blog", url = "blog", trailing_slash = true },
     { name = "archive", url = "archive", trailing_slash = true },
     { name = "tags", url = "tags", trailing_slash = true },
-    { name = "projects", url = "projects", trailing_slash = true },
 ]
 
 # The RSS icon will be shown if (1) it's enabled and (2) the following variable is set.

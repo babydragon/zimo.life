@@ -1,10 +1,10 @@
 +++
-title = "Latest posts"
+title = "最近更新"
 
 [extra]
-header = { title = "Hi, I'm YOUR_NAME! 👋", img = "img/profile.webp", img_alt = "YOUR_NAME" }
+header = { title = "大家好，我是气气 👋", img = "img/profile.png", img_alt = "qiqi" }
 section_path = "blog/_index.md"
 max_posts = 5
 +++
 
-Welcome to my personal site!
+欢迎走近气气的生活!

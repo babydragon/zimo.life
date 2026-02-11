@@ -1,0 +1,3 @@
+{% set current_path=page.path %}
+{% set image_url=current_path ~ path %}
+<img src="{{ resize_image(path=image_url, width=800, height=600, op="fit") }}" />
